@@ -1,0 +1,6 @@
+RewriteEngine On
+
+
+RewriteRule "^(.*)-(.*)-(.*)-(.*).html$" "index.php?controller=$1&action=$2&table=$3&id=$4"
+
+RewriteRule "^(.*)-(.*)-(.*)-(.*).html/?(.*)-(.*)$" "index.php?controller=$1&action=$2&table=$3&id=$4/?controller=$5&action$6"
